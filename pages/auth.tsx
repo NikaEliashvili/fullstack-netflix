@@ -99,11 +99,13 @@ const Auth = ()=>{
                             {variant === 'login' ? 'Sign In' : 'Register'}
                         </h2>
                         <div className="flex flex-col gap-4">
-                        <div className='text-white bg-orange-600 w-full py-2 px-6 rounded-lg flex justify-center items-center'>
+                        {errorMessage.length > 0 
+                        && 
+                        (<div className='text-white bg-orange-600 w-full py-2 px-6 rounded-lg flex justify-center items-center'>
                             <h1 className='lg:text-md sm:text-lg font-mono font-semibold'>
-                            {errorMessage.length > 0 && errorMessage}
+                            {errorMessage}
                             </h1>
-                        </div>
+                        </div>)}
                             {variant === 'register'&& (
 
                                 <Input 
