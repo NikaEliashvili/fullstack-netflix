@@ -18,6 +18,7 @@ const MovieCard: React.FC<MovieCardProps> = ({data})=>{
     return (
         <div className='group bg-zinc-900 col-span-1 relative h-[18vw] '>
             <img 
+            loading='lazy'
             className='
             cursor-pointer
             object-cover
@@ -39,7 +40,9 @@ const MovieCard: React.FC<MovieCardProps> = ({data})=>{
                 sm:group-hover:translate-x-[2vw] sm:group-hover:opacity-100
                 group-hover:opacity-100
             '>
-                <img src={thumbnailUrl} alt="Thumbnail" className='
+                <img 
+                loading='lazy'
+                src={thumbnailUrl} alt="Thumbnail" className='
                  cursor-pointer object-cover transition duration shadow-xl rounded-t-md
                 w-full h-[12vw]
                 ' />

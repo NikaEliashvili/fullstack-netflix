@@ -62,6 +62,7 @@ const Navbar = ()=>{
                 `}
             >
                 <img 
+                loading='lazy'
                 className="h-4 lg:h-7"
                 src="/images/logo.png" alt="Netflix" 
                 />
@@ -103,7 +104,7 @@ const Navbar = ()=>{
                         <div 
                         onClick={toggleshowAccountMenu}
                         className="w-6 h-6 lg:w-10 lg:h-10 rounded-sm overflow-hidden" >
-                            <img src="/images/default-avatar.png" alt="profile" />
+                            <img loading='lazy' src="/images/default-avatar.png" alt="profile" />
                         </div>
                         <BsChevronDown  
                         onClick={toggleshowAccountMenu}

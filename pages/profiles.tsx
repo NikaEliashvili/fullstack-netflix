@@ -54,6 +54,7 @@ const Profiles = ()=>{
                                 '
                             >
                                 <img 
+                                loading='lazy'
                                 className='w-25 h-25'
                                 src='/images/default-avatar.png' alt='Profile' />
 
